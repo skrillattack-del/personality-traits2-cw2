@@ -1,0 +1,3 @@
+﻿l_english:
+ influence_child_personality_interaction_trait_limit: "[CHARACTER.GetShortUINameNoTooltip] already has #V 9#! [personality_traits|E]"
+ has_three_traits_already: "[recipient.GetShortUINameNoTooltip] already has 8 or more personality traits"

@@ -39,7 +39,7 @@ influence_child_personality_interaction = {
 			age >= 4
 			custom_description = {
 				text = influence_child_personality_interaction_trait_limit
-				number_of_personality_traits < 4
+				number_of_personality_traits < 9
 			}
 			#checking all trait individually through the set scope in order to catch if all of your traits are either the same or opposite
 			custom_description = {
@@ -2201,10 +2201,10 @@ influence_child_personality_interaction = {
 			}
 			desc = COWED_REASON
 		}
-		modifier = { #less likely if actor already has 3 personality traits
+		modifier = { #less likely if recipient already has 8 personality traits
 			add = -50
 			scope:recipient = {
-				number_of_personality_traits = 4
+				number_of_personality_traits >= 8
 			}
 			desc = has_three_traits_already
 		}
@@ -2233,10 +2233,10 @@ influence_child_personality_interaction = {
 				is_ai = no
 			}
 		}
-		modifier = { #we don't want characters running around with 4 traits
+		modifier = { #we don't want characters running around with 9 traits
 			add = -100
 			scope:recipient = {
-				number_of_personality_traits = 4
+				number_of_personality_traits >= 9
 			}
 		}
 		modifier = {
